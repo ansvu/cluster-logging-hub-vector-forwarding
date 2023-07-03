@@ -1,3 +1,20 @@
+Table of Contents
+=================
+
+* [cluster-logging-hub-vector-forwarding](#cluster-logging-hub-vector-forwarding)
+   * [Prerequisites](#prerequisites)
+   * [OCP Logging stack architecture](#ocp-logging-stack-architecture)
+   * [Logging Hub](#logging-hub)
+      * [Deploy OpenShift Cluster-Logging and Elasticsearch Operators](#deploy-openshift-cluster-logging-and-elasticsearch-operators)
+      * [Create Cluster Logging Custom Resource](#create-cluster-logging-custom-resource)
+      * [Create Cluster Log Forwarder Custom Resource](#create-cluster-log-forwarder-custom-resource)
+      * [Create External Elasticsearch Route to expose ES serivice for receiving logs from DU or CU clusters.](#create-external-elasticsearch-route-to-expose-es-serivice-for-receiving-logs-from-du-or-cu-clusters)
+      * [Retrieve Elasticsearch Collector Secret For Client Log Forwarding](#retrieve-elasticsearch-collector-secret-for-client-log-forwarding)
+   * [Logging Client](#logging-client)
+      * [Deploy OpenShift Cluster-Logging Operator](#deploy-openshift-cluster-logging-operator)
+      * [Create Cluster Logging Custom Resource](#create-cluster-logging-custom-resource-1)
+      * [Create Cluster Log Forwarder Custom Resource](#create-cluster-log-forwarder-custom-resource-1)
+
 # cluster-logging-hub-vector-forwarding
 This repo will show how to use OpenShift Cluster-Logging Stack Vector as Forwarder instead of using Fluentd. From Client like DU/CU SNO/MMO Clusters can forward APP, AUDIT and INFRA Logs to centralize Logging-HUB to External Elasticsearch Server
 
