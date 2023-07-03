@@ -815,3 +815,7 @@ crt_file = "/etc/collector/metrics/tls.crt"
 min_tls_version = "VersionTLS12"
 ciphersuites = "TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384,TLS_CHACHA20_POLY1305_SHA256,ECDHE-ECDSA-AES128-GCM-SHA256,ECDHE-RSA-AES128-GCM-SHA256,ECDHE-ECDSA-AES256-GCM-SHA384,ECDHE-RSA-AES256-GCM-SHA384,ECDHE-ECDSA-CHACHA20-POLY1305,ECDHE-RSA-CHACHA20-POLY1305,DHE-RSA-AES128-GCM-SHA256,DHE-RSA-AES256-GCM-SHA384"
 ```
+
+## Limitation
+Currently using Cluster Log Hub as centralize store for other clients like SNO/MMO Clusters to forward their APP,AUDIT and INFRA logs to Log-hub store, as in OCP4.12 we can not enable TLS endpoint for external Elasticsearch route from the clients due to the Openshift Elasticsearch external server can not received from the clients using TLS enabling. It does not supports currently. Therefore we disabled TLS on client CLF to communicate with External ES server for this demo purpose. 
+
