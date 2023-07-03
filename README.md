@@ -36,8 +36,13 @@ Determining the supported Openshift Logging release according to the OCP version
 
 **Note:** Vector does not support FIPS Enabled Clusters.  
 
+---
+- Vector's concept  
 [Vector's parameters](https://vector.dev/docs/about/concepts/)
 
+- OpenShift's Vector Features Comparision
+  [collector-features](https://docs.openshift.com/container-platform/4.12/logging/cluster-logging.html#collector-features)
+---
 
 ## OCP Logging stack architecture
 Credit to Yang's diagram, it shows `fluentd` and `vector` as part of the OpenShift Cluster-Logging Stack.
