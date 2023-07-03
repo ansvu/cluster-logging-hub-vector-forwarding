@@ -157,7 +157,7 @@ spec:
         maxAge: 7d
       audit:
         maxAge: 7d
-  managementState: Unmanaged
+  managementState: Managed
   visualization:
     type: kibana
     kibana:
@@ -166,6 +166,7 @@ spec:
 ```shellSession
 $ oc apply -f 04_create_clo_hub_cr.yaml
 ```
+**Note:** The managementState `Unmanaged` is not allowed/supported from ES Log-Hub server, any changes are updated by user then CLO operator will reconcile back the changes.   
 
 ### Create Cluster Log Forwarder Custom Resource
 05_create_clf_hub_cr.yaml: 
