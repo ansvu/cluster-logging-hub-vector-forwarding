@@ -38,8 +38,9 @@ Determining the supported Openshift Logging release according to the OCP version
 ---
 - Vector's concept  
 [Vector's Components](https://vector.dev/docs/about/concepts/)
-- Vector's configuration
-  [Vector's sinks Configuration](https://vector.dev/docs/reference/configuration/sinks/vector/#configuration)  
+- Vector's configuration  
+  [Vector's sinks Configuration](https://vector.dev/docs/reference/configuration/sinks/vector/#configuration)
+- Vector's [Configuration Sources](https://vector.dev/docs/reference/configuration/sources/)  
 - OpenShift's Vector Features Comparision
   [collector-features](https://docs.openshift.com/container-platform/4.12/logging/cluster-logging.html#collector-features)
 ---
