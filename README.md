@@ -32,7 +32,6 @@ Determining the supported Openshift Logging release according to the OCP version
 - Check for Network requirements before starting, some specific ports must be accessible.
 - Persistent storage is planned according to log size evaluation and retention time.
 - FIPS disabled
-- Comparison between Fluent and Vector features, please click [Here](https://docs.openshift.com/container-platform/4.12/logging/cluster-logging.html#cluster-logging-about-vector_cluster-logging)
 
 **Note:** Vector does not support FIPS Enabled Clusters.  
 
