@@ -37,6 +37,9 @@ Determining the supported Openshift Logging release according to the OCP version
 
 
 ## OCP Logging stack architecture
+Credit to Yang's diagram, it shows `fluentd` and `vector` as part of the OpenShift Cluster-Logging Stack.
+![CLO CLF Vector](img/clo-forw-vector.png)
+
 Click [here](https://cloud.redhat.com/blog/introduction-to-the-openshift-4-logging-stack) to see the introduction of OCP4 Logging Stack Architecture
 
 ## Logging Hub 
