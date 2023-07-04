@@ -251,7 +251,7 @@ Note: The certificates and key are used from the ES collector secret, but the in
 
 ## Logging Client 
 ### Deploy OpenShift Cluster-Logging Operator
-- Create CLO Namespace 
+- Create CLO Namespace  
 01_clo_client_ns.yaml: 
 ```yaml
 apiVersion: v1
