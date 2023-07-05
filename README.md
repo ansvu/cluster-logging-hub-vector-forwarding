@@ -60,7 +60,7 @@ cat 01_clo_hub_ns.yaml
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: openshift-operators-redhat 
+  name: openshift-logging 
   annotations:
     openshift.io/node-selector: ""
   labels:
@@ -257,7 +257,7 @@ Note: The certificates and key are used from the ES collector secret, but the in
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: openshift-operators-redhat 
+  name: openshift-logging 
   annotations:
     openshift.io/node-selector: ""
   labels:
