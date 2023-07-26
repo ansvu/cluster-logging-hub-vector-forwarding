@@ -184,7 +184,7 @@ spec:
         name: collector
       url: 'https://elasticsearch.openshift-logging.svc:9200'
   pipelines:
-    - name: nokia-logs
+    - name: telco-logs
       inputRefs:
         - application
         - infrastructure
@@ -366,7 +366,7 @@ spec:
         - application
         - infrastructure
       labels:
-        node: sno_nokiavf
+        node: sno_telcovf
       name: all-logs
       outputRefs:
         - elasticsearch-external
@@ -688,7 +688,7 @@ source = '''
 type = "remap"
 inputs = ["audit","application","infrastructure"]
 source = '''
-  .openshift.labels = {"node":"sno_nokiavf"}
+  .openshift.labels = {"node":"sno_telcovf"}
 '''
 
 # Set Elasticsearch index
